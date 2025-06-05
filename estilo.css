@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+
+*{ /* para tirar a formatação de espaçamento padrão*/
+    margin: 0 ;
+    padding: 0;
+    border:none;
+    /*tira a borda*/
+    font-family: "Quattrocento Sans";
+    /*fonte desejada */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quattrocento Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("imagemvermelha.jpg") center/ cover,#000;
+}
+.contentainer{
+    width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur (9px);
+    border: 1px solid rgb(255, 255, 255);
+    /*define a borda da imagem*/
+}
+.contentainer img{
+    border-radius: 50%;
+    /*para arrendodar a imagem*/
+    border: 3px solid rgb(49, 39, 39);
+}
+.titulo{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.labelForm{
+    /*define as mensagens */
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #fff;
+}
+.inputForm{
+    /*define os quadros da mensagem*/
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    background:rgba(227, 208, 208, 0.3);
+    color: #000;
+    font-size: 17px;
+    outline: none;
+}
+::placeholder{
+    color: #000;
+    font-size: 16px;
+}
+a{
+    display: block;
+    color:#fff ;
+    text-decoration: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: 0.5s;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    background: #6d6565;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
